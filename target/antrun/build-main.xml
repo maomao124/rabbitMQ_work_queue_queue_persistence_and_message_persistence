@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo message="*******************install-or-package*******************"/>
+  <mkdir dir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化/target/classes"/>
+  <copy todir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/classes/rabbitMQ工作队列之队列持久化和消息持久化.jar" tofile="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/rabbitMQ工作队列之队列持久化和消息持久化_hide.jar"/>
+  <copy todir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/classes/rabbitMQ工作队列之队列持久化和消息持久化.jar" tofile="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/rabbitMQ工作队列之队列持久化和消息持久化_args.jar"/>
+  <move file="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/classes/rabbitMQ工作队列之队列持久化和消息持久化_hide.jar" tofile="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/rabbitMQ工作队列之队列持久化和消息持久化_args_save.jar"/>
+  <copy todir="H:/jar包/" overwrite="true">
+    <fileset dir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <copy todir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/" overwrite="true">
+    <fileset dir="H:/jar包/" erroronmissingdir="false">
+      <include name="*.bat"/>
+    </fileset>
+  </copy>
+  <copy todir="H:\程序\大三下期\rabbitMQ工作队列之队列持久化和消息持久化\target/" overwrite="true">
+    <fileset dir="H:/jar包/" erroronmissingdir="false">
+      <include name="jar启动器.7z"/>
+    </fileset>
+  </copy>
+</target>
+</project>
